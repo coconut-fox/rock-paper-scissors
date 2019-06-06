@@ -9,9 +9,15 @@ if answer == 'yes':
     if answer2 == 'player':
         print('Player 1, what do you pick?(type rock, paper or scissors)')
         player1 = input()
+        if player1 != 'rock' or 'paper' or 'scissors':
+            print('Invalid input.')
+            sys.exit
         print('Player 2, what do you pick?(type rock, paper or scissors)')
         player2 = input()
-        if player1 == player2:
+        if player2 != 'rock' or 'paper' or 'scissors':
+            print('Invalid input.')
+            sys.exit
+        elif player1 == player2:
             print('Draw!')
         elif player1 == 'rock':
             if player2 == 'scissors':
@@ -28,8 +34,6 @@ if answer == 'yes':
                 print('Player 1 wins!')
             elif player2 == 'rock':
                 print('Player 2 wins!')
-        else:
-            print('Invalid input.')
     else:
         import random
         choices = ['rock','paper','scissors']
