@@ -1,9 +1,8 @@
-import sys
 win = 1
 print('Hello! Do you want to play Rock-Paper-Scissors?(type yes or no)')
 answer = input()
 if answer == 'no':
-    sys.exit
+    quit()
 if answer == 'yes':
     print('Would you like to play against the computer or another player?(type computer or player)')
     answer2 = input()
@@ -47,3 +46,4 @@ if answer == 'yes':
                 print('The computer has won!(scissors vs paper)')
             elif play == 'rock':
                 print('The player has won!(scissors vs rock)')
+            
