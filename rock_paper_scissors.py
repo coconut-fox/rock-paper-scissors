@@ -1,15 +1,15 @@
 win = 1
-print('Hello! Do you want to play Rock-Paper-Scissors?(type yes or no)')
+print('Hello! Do you want to play Rock-Paper-Scissors?(type "yes" or "no")')
 answer = input()
 if answer == 'no':
     quit()
 if answer == 'yes':
-    print('Would you like to play against the computer or another player?(type computer or player)')
+    print('Would you like to play against the computer or another player?(type "computer" or "player")')
     answer2 = input()
     if answer2 == 'player':
-        print('Player 1, what do you pick?(type rock, paper or scissors)')
+        print('Player 1, what do you pick?(type "rock", "paper" or "scissors")')
         player1 = input()
-        print('Player 2, what do you pick?(type rock, paper or scissors)')
+        print('Player 2, what do you pick?(type "rock", "paper" or "scissors")')
         player2 = input()
         if player1 == player2:
             print('Draw!')
@@ -27,7 +27,7 @@ if answer == 'yes':
         import random
         choices = ['rock', 'paper', 'scissors']
         comp = random.choice(choices)
-        print('Player, what do you pick?(type rock, paper or scissors)')
+        print('Player, what do you pick?(type "rock", "paper" or "scissors")')
         play = input()
         if comp == play:
             print('It\'s a draw!')
@@ -45,5 +45,5 @@ if answer == 'yes':
             if play == 'paper':
                 print('The computer has won!(scissors vs paper)')
             elif play == 'rock':
-                print('The player has won!(scissors vs rock)')
-            
+                print('The player has won!(scissors vs rock)') 
+                
